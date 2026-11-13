@@ -8,7 +8,7 @@ Use Node.js 20.9 or later. Run `npm install`, then `npm run dev`. Open http://12
 
 ## Demonstrations
 
-- Emergency, ambulance, hospital-readiness, routine-appointment and follow-up call journeys; manual stepping, automatic playback and optional browser speech.
+- Emergency, ambulance, hospital-readiness, routine-appointment and follow-up call journeys with recorded English voices, manual stepping, narration-paced automatic playback and browser-speech fallback. Sound starts with a user-initiated call; the speaker control mutes it and **Replay voice** repeats the current line.
 - A generated character with six acted poses: listening, thinking, working, transport coordination, hospital readiness and connected care.
 - A specialist-agent gallery with selectable roles and states, animated waveform and ambulance/coordinator illustrations, scroll reveals, hero parallax and reduced-motion support.
 - English, Yoruba, Hausa, Igbo and Nigerian Pidgin example conversations. These are scripted examples, not validated multilingual speech recognition.
@@ -32,7 +32,7 @@ Choose a patient or care-team role, then use **Fill demo credentials** on the si
 
 Calls, providers, costs, availability, care records and partner responses are simulated. There is no live Amana telephone line, microphone capture, dispatch API, hospital integration, diagnosis or real appointment booking. Do not use the prototype for an actual emergency.
 
-Only visit metadata is saved to browser-tab sessionStorage. Name and phone inputs are validated but not retained. Provider status, reminders, referral status and queue actions are in memory and reset on reload. No patient details are posted to a backend. Clear demo records in the care space or privacy dialog. Optional speech uses the browser’s speech synthesis implementation. Google Fonts supplies typography with local fallbacks.
+Only visit metadata is saved to browser-tab sessionStorage. Name and phone inputs are validated but not retained. Provider status, reminders, referral status and queue actions are in memory and reset on reload. No patient details are posted to a backend. Clear demo records in the care space or privacy dialog. Recorded demo speech is served from `public/audio/{scenario}-{step}.mp3`; if a recording cannot load, the browser’s English speech synthesis is used when available. No microphone access is needed. Google Fonts supplies typography with local fallbacks.
 
 ## Research
 
