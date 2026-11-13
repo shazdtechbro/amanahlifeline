@@ -1,0 +1,2 @@
+const nextConfig = { poweredByHeader: false, images: { unoptimized: true }, turbopack: { root: process.cwd() }, outputFileTracingRoot: process.cwd() };
+export default nextConfig;

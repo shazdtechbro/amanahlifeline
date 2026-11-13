@@ -45,4 +45,3 @@ Sources and scoped historic statistics are in `app/research.js`; full context is
 ## Deploy
 
 Deploy this directory as a Next.js project on Vercel. No environment variables or backend services are required for this front-end demonstration. Install project dependencies locally rather than relying on any unrelated ancestor `node_modules` folder.
-
